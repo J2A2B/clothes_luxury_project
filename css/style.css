@@ -45,6 +45,13 @@ nav {
 	flex-direction: row;
 	justify-content: space-around;
 	margin-bottom: 15px;
+	align-items: center;
+}
+
+nav img{
+	width: 30px;
+	height: 30px;
+
 }
 
 .section1{
@@ -58,6 +65,7 @@ nav {
 	justify-content: space-around;
 	flex-wrap: wrap;
 	margin-top: 35px;
+	margin-bottom: 35px;
 }
 
 .home_img {
@@ -71,6 +79,36 @@ nav {
 
 #femme {
 	background-color: red;
+}
+
+footer {
+	width: 100%;
+	height: 40px;
+	background-color: cyan;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	align-items: center;
+	background-color: black;
+	color: white;
+}
+
+footer p {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.footer_social {
+	min-width: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer_social i {
+	margin: 0 auto;
+	font-size: 20px;
 }
 
 /**#marque {
