@@ -22,9 +22,13 @@ header img {
 	height: 50px;
 }
 
+.logo {
+	margin-top: 25px;
+}
 .logo img {
-	width: 50px;
-	height: 50px;
+	width: 60px;
+	height: auto;
+	margin-bottom: 10px;
 }
 
 #marque {
@@ -33,26 +37,93 @@ header img {
 	font-size: 45px;
 	margin: 0;
 	width: 240px;
-	height: 50px;
+	height: 45px;
 	text-align: center;
 	border-bottom: 1px solid grey;
 	margin-bottom: 25px;
 }
 
-nav {
-	width: 80%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	margin-bottom: 15px;
-	align-items: center;
+
+
+/*Debut NAV*/
+
+#collection, #collection ul {
+	padding:0;
+	margin:0;
+	list-style:none;
+	text-align:center;
+}
+#collection li{
+	display:inline-block;
+	position:relative;
+	border-radius:8px 8px 0 0;
+	width: 150px;
+}
+#collection ul li{
+	display:inherit;
+	border-radius:0;
+}
+#collection ul li:hover{
+	border-radius:0;
+}
+#collection ul{
+	position:absolute;
+	z-index: 1000;
+	max-height:0;
+	left: 0;
+	right: 0;
+	overflow:hidden;
+	-moz-transition: .8s all .4s;
+	-webkit-transition: .8s all .4s;
+	transition: .8s all .4s;
+}
+#collection .hoover_decale {
+	margin-top: 16px;
+}
+#collection li:hover ul{
+	max-height:15em;
+	border-radius: 0 0 3px 3px;
+}
+/* background des liens menus */
+#collection li:first-child {
+	background-color: inherit;
+}
+/* background des liens sous menus */
+#collection li:first-child li{
+	background:white;
+	opacity: 0.6;
+}
+#collection li:nth-child(2) li{
+	background:white;
+	opacity: 0.6;
 }
 
-nav img{
+/* les a href */
+#collection a {
+	text-decoration:none;
+	display:block;
+	padding:8px 4px;
+	color:black;
+}
+#collection ul a{
+	padding:8px 4px;
+	font-size: 15px;
+}
+#collection li:hover li a{
+	color:black;
+}
+#collection li li:hover a{
+	background-color: #EFEFEF;
+	border-bottom: 1px solid #CECECE;
+}
+#collection img{
 	width: 30px;
 	height: 30px;
-
+	margin-bottom: -10px;
 }
+/*fin NAV*/
+
+
 
 .section1{
 	background-image: url(../images/images-home/banner.jpg);
@@ -235,7 +306,7 @@ header {
 }
 
 .box:hover>.sous-menu {
-	visibility: visible; 
+	visibility: visible;
 }
 
 
@@ -256,8 +327,7 @@ footer {
 }
 
 .box:hover>.sous-menu {
-	visibility: visible; 
+	visibility: visible;
 }
 
 */
-
