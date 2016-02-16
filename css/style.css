@@ -64,5 +64,8 @@ header {
 	border-radius: 50%;
 }
 
-.footer {
+footer {
+	width: 100%;
+	height: 40px;
+	position: fixed;
 }
