@@ -182,152 +182,87 @@ footer p {
 	font-size: 20px;
 }
 
-/**#marque {
-	font-family: 'Tangerine', cursive;
-	font-weight: 700;
-	font-size: 45px;
-	margin: 0;
-	width: 80px;
-	height: 50px;
-}
+           /** CSS MAGASINS_INDEX **/
 
-header {
-	top: 0px;
-	background-color: white;
-	width: 100%;
-	height: 140px;
-	display: flex;
-	flex-direction: row;
-	border-bottom: 1px solid black;
-	border-left: 1px solid black;
-	border-right: 1px solid black;
-	color: black;
-	position: fixed;
-	font-weight: bolder;
-	text-decoration: none;
-	z-index: 2;
-}
-
-.logo {
-	position: fixed;
-	z-index: 3;
-	width: 100%;
-	height: 150px;
+.flex_shop {
 	display: flex;
 	justify-content: center;
-	flex-direction: row;
 }
 
-.logo img {
-	width: 50px;
-	height: 50px;
-}
-
-.header_left {
+.container_shop {
 	display: flex;
-	align-items: flex-start;
-	flex-direction: row;
-	justify-content: space-around;
-	width: 75%;
-}
-
-.header_left ul  {
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	justify-content: center;
 	width: 100%;
 }
 
-.header_left li {
+.list_shop {
 	display: flex;
 	justify-content: space-around;
-}
-
-.header_left a {
-	display: flex;
-	justify-content: space-around;
-	text-decoration: none;
-	color: black;
-}
-
-.header_left img {
-	width: 50px;
-	height: 50px;
-	display: flex;
-	order: 0;
-}
-
-.header_right {
-	width: 25%;
-	display: flex;
-	justify-content: center;
-	flex-direction: row;
 	align-items: center;
+	flex-direction: row;
+	width: 65%;
+	height: 250px;
+	border-top: 1px solid grey;
 }
 
-.header_right img {
-	width: 25px;
-	height: 25px;
-	border: 2px solid black;
-	border-radius: 50%;
-	background-color: beige;
-}
-
-.sous-menu {
-	color: black;
-	list-style: none;
-	visibility: hidden;
-	position: absolute;
-	width: 200px;
-	top: 58%;
-	right: -206%;
-
-}
-
-.sous-menu ul {
+.ariette_shop {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
-	border: 1px black solid;
-	padding: 5px;
-
+	justify-content: center;
+	align-items: center;
+	font-family: 'Tangerine', cursive;
+	font-size: 30px;
+	min-width: 25%; 
 }
 
-.sous-menu ul a{
-	font-size: 14px;
+.banner_shop {
+	height: 200px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	width: 40%;
+	color: white;
+	font-size: 18px;
+	font-weight: bolder;
+	border-radius: 4px;
 }
 
-.box {
-	position: relative;
-	padding-bottom: 40px;
-	margin-top: 40px;
-
+#height_shop {
+	line-height: 2px;
 }
 
-.box:hover>.sous-menu {
-	visibility: visible;
+.opacity:hover {
+	background-color: rgba(0,0,0,0.7);
+	background-blend-mode: overlay;
+	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-in;
+}
+
+#paris {
+	background-image: url(../images/images_shop/shop_paris.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#London {
+	background-image: url(../images/images_shop/shop_london.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#New-York {
+	background-image: url(../images/images_shop/shop_new-york.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+#shanghai {
+	background-image: url(../images/images_shop/shop_shanghai.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 
-.section1{
-	background-image: url(../images/images-home/banner.jpg);
-	background-size: cover;
-	height: 100vh;
-}
-
-footer {
-	width: 100%;
-	height: 40px;
-	bottom: 0px;
-	position: fixed;
-	border: 1px solid black;
-	z-index: 2;
-	background-color: white;
-}
-
-.box:hover>.sous-menu {
-	visibility: visible;
-}
-
-*/
+        /** END CSS MAGASINS_INDEX **/
