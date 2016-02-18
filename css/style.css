@@ -845,6 +845,11 @@ footer a {
 
 	}
 
+	.souligner {
+		text-decoration: none;
+	}
+
+
 	.photo:hover>.infobox {
 		opacity: 1;
 		transition: opacity .8s ease-in-out;
