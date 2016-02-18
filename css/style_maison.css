@@ -48,6 +48,11 @@ header img {
 	margin-bottom: 25px;
 }
 
+#marque a {
+	text-decoration: none;
+	color: black;
+}
+
 
 
 /*Debut NAV*/
