@@ -145,7 +145,7 @@ header img {
 	justify-content:flex-start;
 	align-items:center;
 	text-decoration: none;
-	
+
 }
 
 	.ariane a{
@@ -156,7 +156,7 @@ header img {
 
 .section1{
 	padding-top: 40px;
-	
+
 	display: flex;
 	flex-wrap:wrap;
 	justify-content:center;
@@ -196,8 +196,22 @@ header img {
 	flex-wrap:wrap;
 	min-height:100vh;
 	min-width: 50%;
-	
-	
+}
+	.chemin {
+		padding-left: 80px;
+		background-color: rgb(243,241,239);
+		padding-top: 30px;
+		margin-bottom: 0px;
+		padding-bottom: 20px;
+	}
+
+	.chemin a {
+		text-decoration: none;
+	}
+
+	.chemin li {
+		display: inline;
+	}
 
 	}
 
@@ -206,12 +220,12 @@ header img {
 			font-size: 80px;
 			text-align: center;
 			margin: 0;
-		} 
+		}
 
 		.section1-text p{
 			font-size: 30px;
 			text-align: center;
-		} 
+		}
 
 
 		.section1-text img{
@@ -244,7 +258,7 @@ header img {
 		justify-content:center;
 		flex-wrap:wrap;
 
-		
+
 	}
 
 		.img1-top{
@@ -257,7 +271,7 @@ header img {
 		flex-direction:row;
 		justify-content:center;
 		align-items:center;
-		min-width: 300px;	
+		min-width: 300px;
 	}
 
 
@@ -371,7 +385,7 @@ header img {
 			font-size: 18px;
 			text-align: center;
       		background: rgba(255,255,255,0.6);
-      		position: relative;      
+      		position: relative;
       		height:700px;
 			width: 100%;
 			min-width: 300px;
@@ -389,7 +403,7 @@ header img {
 			font-size: 18px;
 			text-align: center;
       		background: rgba(255,255,255,0.6);
-      		position: relative;      
+      		position: relative;
       		height:700px;
 			width: 100%;
 		}
@@ -410,7 +424,7 @@ header img {
 			font-size: 18px;
 			text-align: center;
       		background: rgba(255,255,255,0.6);
-      		position: relative;      
+      		position: relative;
       		height:500px;
 			width: 100%;
 		}
@@ -426,7 +440,7 @@ header img {
 			font-size: 18px;
 			text-align: center;
       		background: rgba(255,255,255,0.6);
-      		position: relative;      
+      		position: relative;
       		height:500px;
 			width: 100%;
 			color: white;
@@ -446,7 +460,7 @@ header img {
 			font-size: 18px;
 			text-align: center;
       		background: rgba(255,255,255,0.6);
-      		position: relative;      
+      		position: relative;
       		height:500px;
 			width: 100%;
 		}
@@ -463,7 +477,7 @@ header img {
 			font-size: 18px;
 			text-align: center;
       		background: rgba(255,255,255,0.6);
-      		position: relative;      
+      		position: relative;
       		height:700px;
 			width: 100%;
 		}
@@ -478,7 +492,7 @@ header img {
 			font-size: 18px;
 			text-align: center;
       		background: rgba(255,255,255,0.6);
-      		position: relative;      
+      		position: relative;
       		height:700px;
 			width: 100%;
 			text-align: center;
@@ -632,7 +646,7 @@ header img {
 		flex-direction:column;
 		justify-content:center;
 		align-items:center;
-		min-width: 300px;	
+		min-width: 300px;
 	}
 
 
@@ -741,15 +755,20 @@ header img {
 
 
 }
+	@media screen and (max-width:381px) {
 
-
-
+.footer_social a {padding: 0px;}
+footer a p {margin-left: 2px;margin-right: 2px; font-size: 10px;}
+footer a {font-size: 10px;margin-left: 4px;margin-right: 4px;padding: 0px;}
+footer i.fa {font-size: 15px;}
+/*.footer_social {margin-left: 30px;}*/
+.footer_mentions_legales {width: 47px;}
+}
 
 
 
 
 /*FIN MEDIA QUERIES*/
-
 
 
 
@@ -776,7 +795,8 @@ footer a {
 	color:white;
 	text-decoration: none;
 	padding-bottom: 0px;
-	padding: 0 15px;
+	padding: 0 12px;
+	font-size: 12px
 }
 
 
@@ -791,5 +811,3 @@ footer a {
 	margin: 0 auto;
 	font-size: 25px;
 }
-
-

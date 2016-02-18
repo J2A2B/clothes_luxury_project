@@ -58,6 +58,7 @@ header img {
 #collection, #collection ul {
 	padding:0;
 	margin:0;
+	margin-bottom: 16px;
 	list-style:none;
 	text-align:center;
 }
@@ -134,7 +135,6 @@ header img {
 	background-repeat:no-repeat;
 	background-size: cover;
 	height: 250px;
-	margin-top: 16px;
 }
 /*fin NAV*/
 
@@ -192,7 +192,8 @@ footer a {
 	color:white;
 	text-decoration: none;
 	padding-bottom: 0px;
-	padding: 0 15px;
+	padding: 0 12px;
+	font-size: 12px
 }
 
 
@@ -386,6 +387,7 @@ footer a {
 		margin-top: 20px;
 		width: 600px;
 		padding-left: 40px;
+		padding-bottom: 20px;
 	}
 	.identite {
 		width: 320px;
@@ -393,16 +395,19 @@ footer a {
 		margin-top: 20px;
 		float: right;
 	}
+	.formulaire_global {
+		width: 100%;
+		margin: 10 auto;
+		display: flex;
+		justify-content: center;
+	}
 	.formulaire {
-		width: 960px;
 		display: inline-block;
 		border: 1px solid #CECECE;
-	}
-	.formulaire_global {
-		margin: 20px 220px;
+		width: 960px;
 		font-size: 15px;
-
 	}
+
 	.nom input{
 		margin-left: 75px;
 		width: 143px;
@@ -474,15 +479,16 @@ footer a {
 		address a {font-size: 13px;}
 		.identite {float: none;display:default;padding-left: 40px;padding-top: 20px;}
 		.formulaire {width: 550px;}
+		.formulaire_global {width: 552px;}
 		.submit_button {margin-left: 115px;}
 		.nom input{margin-left: 78px;}
 	}
-	@media screen and (min-width:320px) and (max-width:600px) {
+	@media screen and (min-width:340px) and (max-width:600px) {
 		.objet_commentaire_langues {width: 400px;}
 		.formulaire {width: 450px;}
 		textarea.commentaire {width: 270px;height: 70px;}
 		address {padding-left: 40px;padding-right: 40px;}
-		.formulaire_global {margin-left:40px;margin-right:30px;font-size: 13px;}
+		.formulaire_global {font-size: 13px;width: 452px;}
 		.objet {margin-left: 77px;}
 		.commentaire {margin-left: 25px;}
 		.langues {margin-left: 57px;}
@@ -492,6 +498,11 @@ footer a {
 		.prenom input{margin-left: 65px;}
 		.email input{margin-left: 79px;}
 		.pays {margin-left: 45px;}
+		.footer_social a {padding: 0px;}
+		footer a p {margin-left: 2px;margin-right: 2px; font-size: 13px;}
+		footer a {font-size: 15px;margin-left: 4px;margin-right: 4px;padding: 0px;}
+		footer i.fa {font-size: 20px;}
+		/*.footer_social {margin-left: 30px;}*/
 	}
 	@media screen and (max-width:340px) {
 		address {padding: 0 15px;font-size: 11px;}
@@ -499,7 +510,7 @@ footer a {
 		address a {font-size: 10px;}
 		.formulaire {width: 300px;}
 		textarea.commentaire {width: 145px;height: 45px;}
-		.formulaire_global {margin-left:16px;margin-right:10px;font-size: 13px;}
+		.formulaire_global {font-size: 13px;width: 302px;}
 		.objet_commentaire_langues {padding-left: 5px;width: 300px;}
 		.identite {padding-left: 5px;width: 300px;}
 		.footer_social a {padding: 0px;}
@@ -535,7 +546,6 @@ footer a {
 		background-repeat:no-repeat;
 		background-size: cover;
 		height: 250px;
-		margin-top: 16px;
 	}
 
 	.banniere_produit_text {
