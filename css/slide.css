@@ -149,4 +149,6 @@
 	#slide-replace figure {flex-wrap: wrap; width: 45%; padding:5; margin:5 auto;}
 	#slide-replace figcaption {text-align: center; border-bottom: 1px gray solid; background-color: white;}
 	#slide-replace h2 {font-size: 15px; font-weight: lighter; margin: 0px;}
+	.section1 {height: 50vh;}
 }
+
