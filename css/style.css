@@ -43,6 +43,12 @@ header img {
 	text-align: center;
 	border-bottom: 1px solid grey;
 	margin-bottom: 25px;
+	text-decoration: none;
+}
+
+#marque a {
+	text-decoration: none;
+	color: black;
 }
 
 
