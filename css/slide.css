@@ -4,7 +4,7 @@
 #slideshow {
 	position: relative;
 	width: 98%;
-	min-width: 50%;
+	/*min-width: 50%;*/
 	height: 310px;
 	padding: 10px;
 	margin: 0 auto 2em;
@@ -41,8 +41,6 @@
 	transform: rotate(3deg);
 }
 
-
-
 /* gestion des dimensions et débordement du conteneur */
 #slideshow .container {
 	position:relative;
@@ -52,14 +50,14 @@
 }
 	
 /* on prévoit un petit espace gris pour la timeline */
-#slideshow .container:after {
+/*#slideshow .container:after {
 	position:absolute;
 	bottom: 0; left:0;
 	content: " ";
 	width: 100%;
 	height: 1px;
 	background: #999;
-}
+}*/
 /* 
    le conteneur des slides
    en largeur il fait 100% x le nombre de slides
@@ -144,4 +142,20 @@
 #slideshow figcaption {
 	/* ... la propriété animation */
 	animation: figcaptionner 20s infinite;
+}
+
+@media screen and (max-width: 768px) {
+
+#slideshow {width: 80%;}
+#slideshow:before,
+#slideshow:after {width: 100%;}
+/*@keyframes slider {
+	0%, 20%, 100%	{ left: 0 }
+	25%, 45%		{ left: -100% }
+	50%, 70%		{ left: -200% }
+	75%, 95%		{ left: -300% }
+}*/
+
+	
+
 }
