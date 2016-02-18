@@ -754,6 +754,7 @@ header img {
 
 
 
+
 footer {
 	width: 100%;
 	height: 40px;
@@ -765,13 +766,19 @@ footer {
 	align-items: center;
 	background-color: black;
 	color: white;
-	margin-top: 60px;
 }
 
 footer p {
-	margin-left: 20px;
-	margin-right: 20px;
+	padding-bottom: 0px;
+	margin: 0 20px;
 }
+footer a {
+	color:white;
+	text-decoration: none;
+	padding-bottom: 0px;
+	padding: 0 15px;
+}
+
 
 .footer_social {
 	min-width: 15%;
@@ -782,7 +789,7 @@ footer p {
 
 .footer_social i {
 	margin: 0 auto;
-	font-size: 20px;
+	font-size: 25px;
 }
 
 
