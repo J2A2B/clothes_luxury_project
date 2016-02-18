@@ -512,174 +512,326 @@ footer a {
 \*------------------------------------*/
 
 
+.banniere_showroom {
+  background-image: url("../images/images-home/6611-4195523.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	height: 250px;
+	margin-top: 16px;
+}
+
+.banniere_produit_text {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+	margin-right: 10px;
+	width: 200px;
+}
+  .banniere_produit_text h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
+  .banniere_produit_text h4 {
+    font-size: 12px;
+    text-transform: uppercase;
+    color:grey;
+    font-style: italic;
+    margin-top: 0px;
+		text-align: right;
+  }
+  .banniere_produit_text h5 {
+    font-size: 14px;
+    text-transform: uppercase;
+    color:#CCCEDE;
+    margin-bottom: 0px;
+    margin-top: 5px;
+  }
+  .banniere_produit_text p {
+    font-size: 10px;
+    color:#CCCEDE;
+    margin-top: 5px;
+  }
+  .banniere_produit_text ul {
+    font-size: 10px;
+    color:grey;
+    height: auto;
+    width: 120px;
+  }
+    .banniere_produit_text li {
+      list-style-type: none;
+      line-height: 17px;
+      text-align: right;
+    }
+    .banniere_produit_text li:first-child {
+      list-style-type: none;
+      line-height: 10px;
+      padding-bottom: 2px;
+      margin-bottom: 5px;
+      padding-top: 5px;
+      border-bottom: 1px solid #EFEFEF;
+    }
+    .banniere_produit_text .hover_spec:hover {
+      background-color: #EFEFEF;
+    }
+  #logo_cintre {
+    width: 15px;
+  }
+  .banniere_produit_text a {
+    text-decoration: none;
+    color: grey;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 2px;
+  }
+  .banniere_produit_text span {
+    font-size: 10px;
+    padding-right: 15px;
+  }
+  .look_detail {
+    display: flex;
+    flex-direction: column;
+		width: 200px;
+		height: 250px;
+  }
+  .look_detail_images {
+      width: 200px;
+			height: 250px;
+  }
+  .look_detail_images img {
+		width: 100%;
+  }
+  .look_detail a {
+    font-size: 8px;
+    font-style: italic;
+    margin: 0px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+  }
+
+
+/**MODALBOX**/
+.modalDialog {
+	position:fixed;
+	top: 7;
+	right: 0;
+	bottom: 0;
+	left: 7;
+/*	background: rgba(0,0,0,0.8);*/
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	display: flex;
+	flex-direction: row;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+}
+.modalDialog > div {
+  width: 400px;
+	position: relative;
+  /*margin: 10% auto;
+  margin: 2.9%;*/
+	padding: 15px 10px 13px 15px;
+	border-radius: 5px;
+/*	background: #fff;*/
+  background: white;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+	box-shadow: 3px 3px 2px #CECECE;
+}
+
+.modalDialog img {
+  width: 230px;
+}
+
+.close {
+	/*background: #606061;
+	color: #FFFFFF;*/
+	line-height: 25px;
+	position: absolute;
+	/*right: -12px;*/
+	text-align: center;
+	top: 10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: normal;
+  font-size: 12px;
+}
+
+.close:hover {
+  border-radius: 50%;
+  opacity:0.2;
+}
+
+/**CODE HAFIDA**/
 .bloc_central {
-    width: 73%;
-    margin: 0 auto;
+	width: 73%;
+	margin: 0 auto;
 }
 
 .chemin {
-    margin-left: -4%;
-    margin-bottom: 4%;
+	margin-left: -4%;
+	margin-bottom: 4%;
+	margin-top: 30px;
 }
 
 .chemin a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .chemin li {
-    display: inline;
+	display: inline;
+}
+#ligne1, #ligne2, #ligne3, #ligne4{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin-top: -2%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	transition: all 1s ease;
+	border-top: 1px solid grey;
 }
 
 
-#ligne1, #ligne2, #ligne3, #ligne4, #ligne5 {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin-top: -2%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    transition: all 1s ease;
-    border-top: 1px solid grey;
-    
-}
-
-
-.photo {
-    width: 210px;
-    height: 300px;
-    transition: transform 0.8s;
-}
-
-
-/* PHOTOS CHEMISES */
-
-#p1 { 
-    background-image: url("../images/chemises/chemise1.png");
-    background-repeat: no-repeat;
-    /*box-shadow: 8px 8px 0px #aaa; */    /*background-color: #FAFAD2 ;*/
+#p1 {
+	background-image: url("../images/chemises/chemise1.png");
+	background-repeat: no-repeat;
 }
 #p2 {
-    background-image: url("../images/chemises/chemise2.png");
-    background-repeat: no-repeat;
+	background-image: url("../images/chemises/chemise2.png");
+	background-repeat: no-repeat;
 
 }
 #p3 {
-    background-image: url("../images/chemises/chemise3.png");
-    background-repeat: no-repeat;
+	background-image: url("../images/chemises/chemise3.png");
+	background-repeat: no-repeat;
 
 }
 
 #p4 {
-    background-image: url("../images/chemises/chemise4.png");
-    background-repeat: no-repeat;
-    
-}
+	background-image: url("../images/chemises/chemise4.png");
+	background-repeat: no-repeat;
 
+}
 /* PHOTOS PANTALONS */
 
 #p5 {
-    background-image: url("../images/pantalons/pantalon1.png");
-    background-repeat: no-repeat;
-    
+	background-image: url("../images/pantalons/pantalon1.png");
+	background-repeat: no-repeat;
+
 }
 
 #p6 {
-    background-image: url("../images/pantalons/pantalon2.png");
-    background-repeat: no-repeat;
-    
+	background-image: url("../images/pantalons/pantalon2.png");
+	background-repeat: no-repeat;
+
 }
 
 #p7 {
-    background-image: url("../images/pantalons/pantalon3.png");
-    background-repeat: no-repeat;
-    
+	background-image: url("../images/pantalons/pantalon3.png");
+	background-repeat: no-repeat;
+
 }
 
 #p8 {
-    background-image: url("../images/pantalons/pantalon4.png");
-    background-repeat: no-repeat;
-    
+	background-image: url("../images/pantalons/pantalon4.png");
+	background-repeat: no-repeat;
+
 }
 
 /* PHOTOS ROBES */
 
 #p9 {
-    background-image: url("../images/robes/robe1.png");
-    background-repeat: no-repeat;
-    
+	background-image: url("../images/robes/robe1.png");
+	background-repeat: no-repeat;
+
 }
 
 #p10 {
-    background-image: url("../images/robes/robe2.png");
-    background-repeat: no-repeat;
-    
+	background-image: url("../images/robes/robe2.png");
+	background-repeat: no-repeat;
+
 }
 
 #p11 {
-    background-image: url("../images/robes/robe3.png");
-    background-repeat: no-repeat;
-    
+	background-image: url("../images/robes/robe3.png");
+	background-repeat: no-repeat;
+
 }
 
 #p12 {
-    background-image: url("../images/robes/robe4.png");
-    background-repeat: no-repeat;
-    
+	background-image: url("../images/robes/robe4.png");
+	background-repeat: no-repeat;
+
 }
 
 /* PHOTOS VESTES */
 
 #p13 {
-    background-image: url("../images/vestes/veste1.png");
-    background-repeat: no-repeat;
-    
+	background-image: url("../images/vestes/veste1.png");
+	background-repeat: no-repeat;
+
 }
 
 #p14 {
-    background-image: url("../images/vestes/veste2.png");
-    background-repeat: no-repeat;
-    
+	background-image: url("../images/vestes/veste2.png");
+	background-repeat: no-repeat;
+
 }
 
 #p15 {
-    background-image: url("../images/vestes/veste3.png");
-    background-repeat: no-repeat;
-    
+	background-image: url("../images/vestes/veste3.png");
+	background-repeat: no-repeat;
+
 }
 
 #p16 {
-    background-image: url("../images/vestes/veste4.png");
-    background-repeat: no-repeat;
-    
+	background-image: url("../images/vestes/veste4.png");
+	background-repeat: no-repeat;
+
 }
 
-
-
+.photo {
+	width: 210px;
+	height: 300px;
+	transition: transform 0.8s;
+}
 .photo:hover {
-    -webkit-transform: translate(0px, 60px);
-       -moz-transform: translate(0px, 60px);
-        -ms-transform: translate(0px, 60px);
-         -o-transform: translate(0px, 60px);
-            transform: translate(0px, 60px);
+	-webkit-transform: translate(0px, 60px);
+	   -moz-transform: translate(0px, 60px);
+	    -ms-transform: translate(0px, 60px);
+	     -o-transform: translate(0px, 60px);
+	        transform: translate(0px, 60px);
 }
 
 .infobox {
-    position: relative;
-    top: -100px;
-    left: 50px;
-    /*visibility: hidden;*/
-    /*font-family: 'Tangerine', cursive;*/
-    color: grey;
-    
-    opacity: 0;
+	position: relative;
+	top: -100px;
+	left: 50px;
+	/*visibility: hidden;*/
+	/*font-family: 'Tangerine', cursive;*/
+	color: grey;
+
+	opacity: 0;
 
 }
 
 .photo:hover>.infobox {
-  opacity: 1;
-  transition: opacity .8s ease-in-out;
-  -moz-transition: opacity .8s ease-in-out;
-  -webkit-transition: opacity .8s ease-in-out;
+   opacity: 1;
+   transition: opacity .8s ease-in-out;
+   -moz-transition: opacity .8s ease-in-out;
+   -webkit-transition: opacity .8s ease-in-out;
 
 }
 
@@ -693,7 +845,7 @@ footer a {
 
 
 
-/** EN ATTENTE 
+/** EN ATTENTE
 
 
 
@@ -922,7 +1074,7 @@ footer p {
 	align-items: center;
 	font-family: 'Tangerine', cursive;
 	font-size: 30px;
-	min-width: 25%; 
+	min-width: 25%;
 }
 
 .banner_shop {
