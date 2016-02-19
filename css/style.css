@@ -613,6 +613,23 @@ footer a {
 	#logo_cintre {
 		width: 15px;
 	}
+
+	#sousmenu-cintre {
+		visibility: hidden;
+	}
+
+	#menu-cintre:hover > #sousmenu-cintre {
+		visibility: visible;
+		opacity: 0.5;
+		border-bottom: 1px solid #CECECE;
+		font-size: 15px;
+	}
+
+	#cintre-sousmenu a{
+		padding: 8px 4px;
+	}
+
+
 	.banniere_produit_text a {
 		text-decoration: none;
 		color: grey;
