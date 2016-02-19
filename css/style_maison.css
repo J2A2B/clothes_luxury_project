@@ -168,7 +168,7 @@ header img {
 	flex-wrap:wrap;
 	background: url(../images/images_maison/buste-face.png) no-repeat center;
 	background-size: cover;
-	min-height:100vh;
+	min-height:140vh;
 	min-width: 50%;
 	margin-bottom: 0;
 	transition: background 2s;
@@ -179,7 +179,7 @@ header img {
 	flex-wrap:wrap;
 	background: url(../images/images_maison/buste-dos.png) no-repeat center;
 	background-size: cover;
-	min-height:100vh;
+	min-height:140vh;
 	width: 50%;
     transition: background 2s;
     -moz transition: background 2s;
@@ -205,8 +205,9 @@ header img {
 		padding-bottom: 20px;
 	}
 
-	.chemin a {
+	.chemin li a {
 		text-decoration: none;
+		color: black;
 	}
 
 	.chemin li {
@@ -247,6 +248,7 @@ header img {
 	display: flex;
 	flex-direction:column;
 	align-items:center;
+	overflow: hidden;
 
 }
 
@@ -565,15 +567,31 @@ header img {
 
 /*MEDIA QUERIES*/
 
+@media screen and (min-width: 360px)
+{
+	#collection li:first-child li{
+	background:white;
+	
+}
+#collection li:nth-child(2) li{
+	background:white;
+	
+}
+
+}
+
+
 
 @media screen and (min-width: 801px)
 {
 	.img-container{
 		display: none;
 	}
+
+
 }
 
-@media screen and (max-width: 900px)
+@media screen and (max-width: 980px)
 {
 
 

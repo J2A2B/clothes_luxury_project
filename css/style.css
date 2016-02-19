@@ -136,6 +136,12 @@ header img {
 	background-size: cover;
 	height: 250px;
 }
+
+.chemin li a {
+	text-decoration: none;
+	color: black;
+}
+
 /*fin NAV*/
 
 
@@ -542,7 +548,7 @@ footer a {
 
 
 	.banniere_showroom {
-		background-image: url("../images/images-home/6611-4195523.jpg");
+		background: url("../images/images-home/6611-4195523.jpg") center;
 		background-repeat:no-repeat;
 		background-size: cover;
 		height: 250px;
@@ -713,7 +719,7 @@ footer a {
 		margin-top: 30px;
 	}
 
-	.chemin a {
+	.chemin li a {
 		text-decoration: none;
 	}
 
