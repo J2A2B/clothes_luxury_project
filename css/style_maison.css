@@ -1,0 +1,831 @@
+body {
+	z-index: 1;
+	width: 100%;
+	position: relative;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 300;
+
+}
+
+
+
+/*HEADER*/
+
+header {
+	background-color: rgb(243,241,239);
+
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: auto;
+}
+
+header img {
+	width: 50px;
+	height: 50px;
+}
+
+.logo {
+	margin-top: 25px;
+}
+.logo img {
+	width: 60px;
+	height: auto;
+	margin-bottom: 10px;
+}
+
+#marque {
+	font-family: 'Tangerine', cursive;
+	font-weight: 700;
+	font-size: 45px;
+	margin: 0;
+	width: 240px;
+	height: 45px;
+	text-align: center;
+	border-bottom: 1px solid grey;
+	margin-bottom: 25px;
+}
+
+#marque a {
+	text-decoration: none;
+	color: black;
+}
+
+
+
+/*Debut NAV*/
+
+#collection, #collection ul {
+	padding:0;
+	margin:0;
+	list-style:none;
+	text-align:center;
+}
+#collection li{
+	display:inline-block;
+	position:relative;
+	border-radius:8px 8px 0 0;
+	width: 150px;
+}
+#collection ul li{
+	display:inherit;
+	border-radius:0;
+}
+#collection ul li:hover{
+	border-radius:0;
+}
+#collection ul{
+	position:absolute;
+	z-index: 1000;
+	max-height:0;
+	left: 0;
+	right: 0;
+	overflow:hidden;
+	-moz-transition: .8s all .4s;
+	-webkit-transition: .8s all .4s;
+	transition: .8s all .4s;
+}
+#collection .hoover_decale {
+	margin-top: 16px;
+}
+#collection li:hover ul{
+	max-height:15em;
+	border-radius: 0 0 3px 3px;
+}
+/* background des liens menus */
+#collection li:first-child {
+	background-color: inherit;
+}
+/* background des liens sous menus */
+#collection li:first-child li{
+	background:white;
+	opacity: 0.6;
+}
+#collection li:nth-child(2) li{
+	background:white;
+	opacity: 0.6;
+}
+
+/* les a href */
+#collection a {
+	text-decoration:none;
+	display:block;
+	padding:8px 4px;
+	color:black;
+}
+#collection ul a{
+	padding:8px 4px;
+	font-size: 15px;
+}
+#collection li:hover li a{
+	color:black;
+}
+#collection li li:hover a{
+	background-color: #EFEFEF;
+	border-bottom: 1px solid #CECECE;
+}
+#collection img{
+	width: 30px;
+	height: 30px;
+	margin-bottom: -10px;
+}
+
+
+/*SECTION1*/
+
+
+.ariane{
+	padding-top: 50px;
+	padding-left: 20%;
+	background-color: rgb(243,241,239);
+	display: flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	align-items:center;
+	text-decoration: none;
+
+}
+
+	.ariane a{
+	text-decoration: none;
+	color: black;
+	font-size: 12px;
+}
+
+.section1{
+	padding-top: 40px;
+
+	display: flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	background-color: rgb(243,241,239);
+}
+
+	.section1-img{
+	display: flex;
+	flex-wrap:wrap;
+	background: url(../images/images_maison/buste-face.png) no-repeat center;
+	background-size: cover;
+	min-height:140vh;
+	min-width: 50%;
+	margin-bottom: 0;
+	transition: background 2s;
+}
+
+	.section1-img:hover{
+	display: flex;
+	flex-wrap:wrap;
+	background: url(../images/images_maison/buste-dos.png) no-repeat center;
+	background-size: cover;
+	min-height:140vh;
+	width: 50%;
+    transition: background 2s;
+    -moz transition: background 2s;
+	-webkit transition: background 2s;
+	}
+
+	.section1-text{
+	background-color: rgb(243,241,239);
+	background-size: cover;
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	flex-wrap:wrap;
+	min-height:100vh;
+	min-width: 50%;
+}
+	.chemin {
+		padding-left: 80px;
+		background-color: rgb(243,241,239);
+		padding-top: 30px;
+		margin-bottom: 0px;
+		padding-bottom: 20px;
+	}
+
+	.chemin li a {
+		text-decoration: none;
+		color: black;
+	}
+
+	.chemin li {
+		display: inline;
+	}
+
+	}
+
+		.section1-text h1{
+			font-family: 'Tangerine', cursive;
+			font-size: 80px;
+			text-align: center;
+			margin: 0;
+		}
+
+		.section1-text p{
+			font-size: 30px;
+			text-align: center;
+		}
+
+
+		.section1-text img{
+			height: 50px;
+			width: 50px;
+		}
+
+.s2-title h2{
+	text-align: center;
+	margin-top: 80px;
+	font-weight: 500;
+	font-size: 40px;
+}
+
+.section2{
+	width: auto;
+	height: auto;
+	margin-top: auto;
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	overflow: hidden;
+
+}
+
+
+	.photo1{
+		width: 100%;
+		display: flex;
+		flex-direction:row;
+		justify-content:center;
+		flex-wrap:wrap;
+
+
+	}
+
+		.img1-top{
+		background-image: url(../images/images_maison/img1-left.jpg);
+		background-size: cover;
+		height:700px;
+		width: 40%;
+		margin: 10px;
+		min-width: 300px;
+		flex-direction:row;
+		justify-content:center;
+		align-items:center;
+		min-width: 300px;
+	}
+
+
+		.img2-top{
+		background-image: url(../images/images_maison/magasin.jpg);
+		background-size: cover;
+		height:700px;
+		width: 40%;
+		margin: 10px;
+		min-width: 300px;
+		flex-direction:row;
+		justify-content:center;
+		align-items:center;
+		min-width: 300px;
+	}
+
+
+		.img1-middle{
+		background-image: url(../images/images_maison/serge.jpg);
+		background-size: cover;
+		height:500px;
+		width: 26%;
+		margin: 10px;
+		min-width: 300px;
+		flex-direction:row;
+		justify-content:center;
+		align-items:center;
+		min-width: 300px;
+	}
+
+
+		.img2-middle{
+
+		background-size: cover;
+		background-color: black;
+		height:500px;
+		width: 26%;
+		margin: 10px;
+		min-width: 300px;
+		border: 5px solid rgb(243,241,239);
+		flex-direction:row;
+		justify-content:center;
+		align-items:center;
+		min-width: 300px;
+		}
+
+			.img2-middle h2{
+				font-family: 'Tangerine', cursive;
+				font-size: 60px;
+				margin: auto;
+				color: white;
+			}
+
+
+			.img2-middle p{
+				margin: 5%;
+			}
+
+		.img3-middle{
+		background-image: url(../images/images_maison/defile96.jpg);
+		background-size: cover;
+		height:500px;
+		width: 26%;
+		margin: 10px;
+		flex-direction:row;
+		justify-content:center;
+		align-items:center;
+		min-width: 300px;
+
+	}
+
+
+		.img1-bottom{
+		background-image: url(../images/images_maison/defile90.jpg);
+		background-size: cover;
+		height:700px;
+		width: 40%;
+		margin: 10px;
+		min-width: 300px;
+		flex-direction:row;
+		justify-content:center;
+		align-items:center;
+		min-width: 300px;
+	}
+
+
+		.img2-bottom{
+		background-image: url(../images/images_maison/2015.jpg);
+		background-size: cover;
+		height:700px;
+		width: 40%;
+		margin: 10px;
+		min-width: 300px;
+		flex-direction:row;
+		justify-content:center;
+		align-items:center;
+		min-width: 300px;
+	}
+
+
+		.img-hover{
+			visibility: hidden;
+		}
+
+		.img1-top:hover .img-hover {
+			display: flex;
+    		flex-direction:column;
+    		align-items:center;
+    		justify-content:center;
+      		color: black;
+			font-size: 18px;
+			text-align: center;
+      		background: rgba(255,255,255,0.6);
+      		position: relative;
+      		height:700px;
+			width: 100%;
+			min-width: 300px;
+		}
+
+
+
+		.img2-top:hover .img-hover {
+			display: flex;
+    		flex-direction:column;
+    		align-items:center;
+    		justify-content:center;
+			min-width: 300px;
+      		color: black;
+			font-size: 18px;
+			text-align: center;
+      		background: rgba(255,255,255,0.6);
+      		position: relative;
+      		height:700px;
+			width: 100%;
+		}
+
+
+
+
+
+
+		.img1-middle:hover .img-hover {
+			display: flex;
+    		flex-direction:column;
+    		align-items:center;
+    		justify-content:center;
+			visibility: hidden;
+			min-width: 300px;
+      		color: black;
+			font-size: 18px;
+			text-align: center;
+      		background: rgba(255,255,255,0.6);
+      		position: relative;
+      		height:500px;
+			width: 100%;
+		}
+
+
+		.img2-middle:hover .img-hover {
+			display: flex;
+    		flex-direction:column;
+    		align-items:center;
+    		justify-content:center;
+			visibility: hidden;
+      		color: black;
+			font-size: 18px;
+			text-align: center;
+      		background: rgba(255,255,255,0.6);
+      		position: relative;
+      		height:500px;
+			width: 100%;
+			color: white;
+			min-width: 300px;
+
+		}
+
+
+		.img3-middle:hover .img-hover {
+			display: flex;
+    		flex-direction:column;
+    		align-items:center;
+    		justify-content:center;
+			visibility: hidden;
+			min-width: 300px;
+      		color: black;
+			font-size: 18px;
+			text-align: center;
+      		background: rgba(255,255,255,0.6);
+      		position: relative;
+      		height:500px;
+			width: 100%;
+		}
+
+
+		.img1-bottom:hover .img-hover {
+			display: flex;
+    		flex-direction:column;
+    		align-items:center;
+    		justify-content:center;
+			visibility: hidden;
+			min-width: 300px;
+      		color: black;
+			font-size: 18px;
+			text-align: center;
+      		background: rgba(255,255,255,0.6);
+      		position: relative;
+      		height:700px;
+			width: 100%;
+		}
+
+		.img2-bottom:hover .img-hover {
+			display: flex;
+    		flex-direction:column;
+    		align-items:center;
+    		justify-content:center;
+			visibility: hidden;
+      		color: black;
+			font-size: 18px;
+			text-align: center;
+      		background: rgba(255,255,255,0.6);
+      		position: relative;
+      		height:700px;
+			width: 100%;
+			text-align: center;
+			min-width: 300px;
+		}
+
+
+		.img-hover-container{
+			display: flex;
+    		flex-direction:column;
+    		align-items:center;
+    		justify-content:center;
+    		text-align: center;
+		/*position: relative;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		transform: translateY(-50%);*/
+    }
+
+		.img1-top:hover .img-hover {
+			opacity: 1;
+			visibility: visible;
+			transition:2s;
+		}
+
+		.img2-top:hover .img-hover {
+			opacity: 1;
+			visibility: visible;
+			transition:2s;
+		}
+
+		.img1-middle:hover .img-hover {
+			opacity: 1;
+			visibility: visible;
+			transition:2s;
+		}
+
+		.img2-middle:hover .img-hover {
+			opacity: 1;
+			visibility: visible;
+			transition:2s;
+		}
+
+		.img3-middle:hover .img-hover {
+			opacity: 1;
+			visibility: visible;
+			transition:2s;
+		}
+
+		.img1-bottom:hover .img-hover {
+			opacity: 1;
+			visibility: visible;
+			transition:2s;
+		}
+
+		.img2-bottom:hover .img-hover {
+			opacity: 1;
+			visibility: visible;
+			transition:2s;
+		}
+
+
+.photo1 p{
+	font-weight: 600;
+}
+
+
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (min-width: 360px)
+{
+	#collection li:first-child li{
+	background:white;
+	
+}
+#collection li:nth-child(2) li{
+	background:white;
+	
+}
+
+}
+
+
+
+@media screen and (min-width: 801px)
+{
+	.img-container{
+		display: none;
+	}
+
+
+}
+
+@media screen and (max-width: 980px)
+{
+
+
+.section1-img{
+	display: none;
+}
+
+/*.section1-text{
+	display: none;
+	}*/
+
+	.section1-text{
+		min-height: 100%;
+	}
+
+
+	.section1-text h1{
+		display: none;
+	}
+
+
+.img1-top:hover .img-hover {
+
+	visibility: hidden;
+
+	}
+
+	.img2-top:hover .img-hover {
+
+	visibility:hidden;
+
+	}
+
+	.img1-middle:hover .img-hover {
+
+	visibility:hidden;
+
+	}
+
+	.img2-middle:hover .img-hover {
+
+	visibility:hidden;
+
+	}
+
+	.img3-middle:hover .img-hover {
+
+	visibility:hidden;
+
+	}
+
+	.img1-bottom:hover .img-hover {
+
+	visibility:hidden;
+
+	}
+
+	.img2-bottom:hover .img-hover {
+
+	visibility:hidden;
+
+	}
+
+.img1-top{
+		background-image: url(../images/images_maison/img1-left.jpg);
+		background-size: cover;
+		height:350px;
+		width: 300px;
+		min-width: 300px;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+		min-width: 300px;
+	}
+
+
+		.img2-top{
+		background-image: url(../images/images_maison/magasin.jpg);
+		background-size: cover;
+		height:350px;
+		width: 300px;
+		min-width: 300px;
+		flex-direction:column;
+		justify-content:center;
+		align-items:flex-end;
+		min-width: 300px;
+	}
+
+
+		.img1-middle{
+		background-image: url(../images/images_maison/serge.jpg);
+		background-size: cover;
+		height:350px;
+		width: 300px;
+		min-width: 300px;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+		min-width: 300px;
+	}
+
+
+		.img2-middle{
+
+		background-size: cover;
+		background-color: black;
+		height:350px;
+		width: 300px;
+		min-width: 300px;
+		border: 5px solid rgb(243,241,239);
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+		min-width: 300px;
+		}
+
+			.img2-middle h2{
+				font-family: 'Tangerine', cursive;
+				font-size: 60px;
+				margin: auto;
+				color: white;
+			}
+
+
+			.img2-middle p{
+				margin: 5%;
+			}
+
+		.img3-middle{
+		background-image: url(../images/images_maison/defile96.jpg);
+		background-size: cover;
+		height:350px;
+		width: 300px;
+		flex-direction:row;
+		justify-content:center;
+		align-items:center;
+		min-width: 300px;
+
+	}
+
+
+		.img1-bottom{
+		background-image: url(../images/images_maison/defile90.jpg);
+		background-size: cover;
+		height:350px;
+		width: 300px;
+		min-width: 300px;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+		min-width: 300px;
+	}
+
+
+		.img2-bottom{
+		background-image: url(../images/images_maison/2015.jpg);
+		background-size: cover;
+		height:350px;
+		width: 300px;
+		min-width: 300px;
+		flex-direction:column;
+		justify-content:center;
+		align-items:center;
+	}
+
+
+.img-container{
+	height: 350px;
+	visibility: visible;
+	color: white;
+	display: flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	text-align: center;
+}
+
+
+
+
+}
+	@media screen and (max-width:381px) {
+
+.footer_social a {padding: 0px;}
+footer a p {margin-left: 2px;margin-right: 2px; font-size: 10px;}
+footer a {font-size: 10px;margin-left: 4px;margin-right: 4px;padding: 0px;}
+footer i.fa {font-size: 15px;}
+/*.footer_social {margin-left: 30px;}*/
+.footer_mentions_legales {width: 47px;}
+}
+
+
+
+
+/*FIN MEDIA QUERIES*/
+
+
+
+
+
+footer {
+	width: 100%;
+	height: 40px;
+	background-color: cyan;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	align-items: center;
+	background-color: black;
+	color: white;
+}
+
+footer p {
+	padding-bottom: 0px;
+	margin: 0 20px;
+}
+footer a {
+	color:white;
+	text-decoration: none;
+	padding-bottom: 0px;
+	padding: 0 12px;
+	font-size: 12px
+}
+
+
+.footer_social {
+	min-width: 15%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer_social i {
+	margin: 0 auto;
+	font-size: 25px;
+}

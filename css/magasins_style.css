@@ -1,0 +1,184 @@
+           /** CSS MAGASINS_INDEX **/
+
+.flex_shop {
+	display: flex;
+	justify-content: center;
+}
+
+.container_shop {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+}
+
+.list_shop {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	width: 65%;
+	height: 350px;
+	border-top: 1px solid grey;
+}
+
+.ariette_shop {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Tangerine', cursive;
+	font-size: 30px;
+	min-width: 25%; 
+}
+
+.banner_shop {
+	min-height: 200px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+	min-width: 300px;
+	color: white;
+	font-size: 18px;
+	font-weight: bolder;
+	border-radius: 4px;
+}
+
+#height_shop {
+	line-height: 2px;
+}
+
+.opacity:hover {
+	background-color: rgba(0,0,0,0.7);
+	background-blend-mode: overlay;
+	transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s ease-in;
+}
+
+#paris {
+	background-image: url(../images/images_shop/shop_paris.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#London {
+	background-image: url(../images/images_shop/shop_london.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#New-York {
+	background-image: url(../images/images_shop/shop_new-york.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#shanghai {
+	background-image: url(../images/images_shop/shop_shanghai.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+        /** END CSS MAGASINS_INDEX **/
+
+
+        /** RESPONSIVE MAGASINS_INDEX **/
+
+@media screen and (max-width: 480px)
+{
+
+	iframe {
+		display: none;
+	}
+
+	.list_shop {
+		margin-top: 15px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.banner_shop {
+		font-size: 22px;
+	}
+
+	.opacity {
+		background-color: rgba(0,0,0,0.7);
+	}
+
+	.opacity {
+		background-color: rgba(0,0,0,0.7);
+		background-blend-mode: overlay;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 710px)
+{
+	
+	iframe {
+		display: none;
+	}
+
+	.list_shop {
+		margin-top: 15px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.banner_shop {
+		font-size: 22px;
+	}
+
+	.opacity {
+		background-color: rgba(0,0,0,0.7);
+		background-blend-mode: overlay;
+	}
+
+
+}
+
+@media screen and (min-width: 711px) and (max-width: 1000px)
+{
+
+	
+
+
+	.list_shop {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap-reverse;
+		width: 75%;
+	}
+
+	.ariette_shop {
+		order: 3;
+	}
+
+	.opacity {
+		background-color: rgba(0,0,0,0.7);
+		background-blend-mode: overlay;
+	}
+	
+	.banner_shop {
+		order: 1;
+		margin-right: 20px;
+	}
+
+	iframe {
+		order: 2;
+	}
+}
+
+
+
+
+
+
+
+
+
+        /** END MAGASINS_INDEX **/
